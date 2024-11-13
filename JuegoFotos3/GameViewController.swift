@@ -7,13 +7,30 @@
 
 import UIKit
 
+let   Fotos = [
+    "MarioHub_Luigi",
+    "AnimalCrossing",
+    "AnimalCrossing2",
+    "character-geeta",
+    "character-nemona",
+    "MarioHub",
+    "MarioKart1",
+    "Mariokart2",
+    "nintendoSwichtSport",
+    "pokemon-iron_valiant",
+    "pokemon-walking_wake",
+    "swichSport"
+]
+var resultadosCorrectos: [String] = []
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        resultadosCorrectos = []
         iniciarFotos()
-        resultadosCorrectos.removeFirst()
+        
+       
         
         // Do any additional setup after loading the view.
     }
@@ -28,11 +45,10 @@ class GameViewController: UIViewController {
     
 
         Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
-            if self.resultadosCorrectos.count <= 4{self.cambiarFotos()}
+            if resultadosCorrectos.count <= 4{self.cambiarFotos()}
             else{
                 print("Salio del supuesto bucle")
                 
-            
             }
             
         }
@@ -47,26 +63,10 @@ class GameViewController: UIViewController {
     
     func randomizadorDeFotos()->String{
         
-      
-        let Fotos = [
-            "MarioHub_Luigi",
-            "AnimalCrossing",
-            "AnimalCrossing2",
-            "character-geeta",
-            "character-nemona",
-            "MarioHub",
-            "MarioKart1",
-            "Mariokart2",
-            "nintendoSwichtSport",
-            "pokemon-iron_valiant",
-            "pokemon-walking_wake",
-            "switchSport"
-        ]
         
         var fotoRandom:String = ""
         
         repeat{
-            
             fotoRandom = Fotos.randomElement()!
             
         }while resultadosCorrectos.contains(fotoRandom)
@@ -76,5 +76,4 @@ class GameViewController: UIViewController {
         return fotoRandom
     }
     
-    var resultadosCorrectos = [""]
 }
