@@ -31,7 +31,7 @@ class TerceraPantallaViewController: UIViewController, UICollectionViewDataSourc
         collectionView.dataSource = self
         collectionView.delegate = self
 
-        collectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCell")
+        //collectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCell")
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

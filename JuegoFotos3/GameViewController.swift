@@ -44,10 +44,11 @@ class GameViewController: UIViewController {
     func iniciarFotos(){
     
 
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             if resultadosCorrectos.count <= 4{self.cambiarFotos()}
             else{
                 print("Salio del supuesto bucle")
+                //performSegue(withIdentifier: "TerceraPantalla", sender: self)
                 
             }
             
