@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F54E7C82CE7661F00A9C9AE /* VariablesGlobales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F54E7C72CE7661F00A9C9AE /* VariablesGlobales.swift */; };
 		7F6DC8572CE4C60900848197 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DC8562CE4C60900848197 /* ImageCollectionViewCell.swift */; };
 		7F73A40F2CE36F31005A2392 /* TerceraPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73A40E2CE36F31005A2392 /* TerceraPantalla.swift */; };
 		7FD206892CDB67D700AFEEDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD206882CDB67D700AFEEDD /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F54E7C72CE7661F00A9C9AE /* VariablesGlobales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariablesGlobales.swift; sourceTree = "<group>"; };
 		7F6DC8562CE4C60900848197 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F73A40E2CE36F31005A2392 /* TerceraPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraPantalla.swift; sourceTree = "<group>"; };
 		7FD206852CDB67D700AFEEDD /* JuegoFotos3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuegoFotos3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 		7FD2067C2CDB67D700AFEEDD = {
 			isa = PBXGroup;
 			children = (
+				7F54E7C72CE7661F00A9C9AE /* VariablesGlobales.swift */,
 				7FD206872CDB67D700AFEEDD /* JuegoFotos3 */,
 				7FD206862CDB67D700AFEEDD /* Products */,
 			);
@@ -152,6 +155,7 @@
 				7FD2068D2CDB67D700AFEEDD /* ViewController.swift in Sources */,
 				7FD206892CDB67D700AFEEDD /* AppDelegate.swift in Sources */,
 				7F73A40F2CE36F31005A2392 /* TerceraPantalla.swift in Sources */,
+				7F54E7C82CE7661F00A9C9AE /* VariablesGlobales.swift in Sources */,
 				7FD2068B2CDB67D700AFEEDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

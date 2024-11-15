@@ -31,7 +31,6 @@ class TerceraPantallaViewController: UIViewController, UICollectionViewDataSourc
         collectionView.dataSource = self
         collectionView.delegate = self
 
-        //collectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCell")
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,12 +39,13 @@ class TerceraPantallaViewController: UIViewController, UICollectionViewDataSourc
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCollectionViewCell
-        cell.ButtonInCell.imageView?.image = images[indexPath.row]
+        cell.ImageViewItem.image = images[indexPath.row]
+        
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 150, height: 150)
     }
 }
     

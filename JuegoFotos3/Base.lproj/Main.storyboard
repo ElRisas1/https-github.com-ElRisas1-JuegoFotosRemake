@@ -124,22 +124,38 @@
                                                         <constraint firstAttribute="height" constant="100" id="E6L-Qp-hH5"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="nintallchar" title=""/>
+                                                    <buttonConfiguration key="configuration" style="plain" title=""/>
                                                 </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarioHub" translatesAutoresizingMaskIntoConstraints="NO" id="8Vh-Kt-K22">
+                                                    <rect key="frame" x="1" y="1" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="2f3-Qu-GsX"/>
+                                                        <constraint firstAttribute="height" constant="100" id="7Yw-hd-Xce"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="8Vh-Kt-K22" firstAttribute="top" secondItem="bSg-sW-lul" secondAttribute="top" constant="1" id="36h-kU-Khv"/>
                                                 <constraint firstAttribute="bottom" secondItem="dAh-AG-zLn" secondAttribute="bottom" constant="1" id="FyV-CZ-jex"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Vh-Kt-K22" secondAttribute="trailing" constant="1" id="afX-df-0cd"/>
                                                 <constraint firstAttribute="trailing" secondItem="dAh-AG-zLn" secondAttribute="trailing" constant="1" id="fpl-uM-eo1"/>
                                                 <constraint firstItem="dAh-AG-zLn" firstAttribute="top" secondItem="bSg-sW-lul" secondAttribute="top" constant="1" id="kxi-DG-33h"/>
+                                                <constraint firstItem="8Vh-Kt-K22" firstAttribute="leading" secondItem="bSg-sW-lul" secondAttribute="leading" constant="1" id="ubv-3t-aMB"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Vh-Kt-K22" secondAttribute="bottom" constant="1" id="w2N-6m-Rbv"/>
                                                 <constraint firstItem="dAh-AG-zLn" firstAttribute="leading" secondItem="bSg-sW-lul" secondAttribute="leading" constant="1" id="xHh-Bm-6xZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="ButtonInCell" destination="dAh-AG-zLn" id="lbz-HE-PMO"/>
+                                            <outlet property="ImageViewItem" destination="8Vh-Kt-K22" id="lFh-YI-x7O"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5f-ul-xsf">
+                                <rect key="frame" x="76" y="357" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yL5-aE-zPq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -160,6 +176,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MarioHub" width="567" height="781"/>
         <image name="fondo" width="298" height="553"/>
         <image name="nintallchar" width="590" height="350"/>
         <systemColor name="systemBackgroundColor">

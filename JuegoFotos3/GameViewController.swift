@@ -7,21 +7,7 @@
 
 import UIKit
 
-let   Fotos = [
-    "MarioHub_Luigi",
-    "AnimalCrossing",
-    "AnimalCrossing2",
-    "character-geeta",
-    "character-nemona",
-    "MarioHub",
-    "MarioKart1",
-    "Mariokart2",
-    "nintendoSwichtSport",
-    "pokemon-iron_valiant",
-    "pokemon-walking_wake",
-    "swichSport"
-]
-var resultadosCorrectos: [String] = []
+  
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -48,6 +34,7 @@ class GameViewController: UIViewController {
             if resultadosCorrectos.count <= 4{self.cambiarFotos()}
             else{
                 print("Salio del supuesto bucle")
+                timer.invalidate()
                 //performSegue(withIdentifier: "TerceraPantalla", sender: self)
                 
             }
